@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "passion";
+    src: url(fontes/PassionOne-Regular.ttf), url(fontes/PassionOne-Bold.ttf), url(fontes/PassionOne-Black.ttf);
+}
+
+@font-face {
+    font-family: "srirancha";
+    src: url(fontes/Sriracha-Regular.ttf );
+}
+
+:root {
+    --fonte-padrão: arial, helvetica, sans-serif;
+    --fonte-título: "passion";
+    --fonte-cordel: "srirancha";
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: var(--fonte-padrão);
+    font-size: 16px;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+header h1 {
+    font-family: var(--fonte-título);
+    font-size: 3em;
+}
+
+header p {
+    font-family: var(--fonte-padrão);
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+article {
+    font-family: var(--fonte-cordel);
+    max-width: 600px;
+    min-width: 200px;
+    margin: auto;
+    box-shadow: 0px 0px 6px black;
+}
+
+article p {
+    padding: 100px 400px 100px 10px;
+}
+
+article p.tipo01 {
+    background-color: white;
+}
+
+article p.tipo02 {
+    color: white;
+    background-image: url(imagens/background001.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+article p.tipo03 {
+    color: white;
+    background-image: url(imagens/background002.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

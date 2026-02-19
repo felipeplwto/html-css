@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "passion";
+    src: url(fontes/PassionOne-Regular.ttf), url(fontes/PassionOne-Bold.ttf), url(fontes/PassionOne-Black.ttf);
+}
+
+@font-face {
+    font-family: "srirancha";
+    src: url(fontes/Sriracha-Regular.ttf)
+}
+
+:root {
+    --fonte-titulo: "passion";
+    --font-texto: "srirancha";
+    --font-padrão: arial, verdana, helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: var(--font-padrão);
+    font-size: 16px;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+header > h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 4em;
+}
+
+header > p {
+    font-family: var(--font-padrão);
+}
+
+header a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+main {
+    max-width: 600px;
+    min-width: 200px;
+    margin: auto;
+    box-shadow: 0px 0px 6px black;
+}
+
+article {
+    font-family: var(--font-texto);
+}
+
+article > p {
+    padding: 50px 50px 50px 0px;
+    margin: 0px 0px 0px 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.288);
+}
+
+div {
+    padding: 50px 50px 50px 0px;
+    display: flex;
+}
+
+div.fundo01 {
+    background-image: url(imagens/background001.jpg);
+    color: white;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.fundo01 > p {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+div.fundo02 {
+    background-image: url(imagens/background002.jpg);
+    color: white;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.fundo02 > p {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
